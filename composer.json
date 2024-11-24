@@ -1,0 +1,24 @@
+{
+    "name": "sys4soft/bng",
+    "description": "Aplicação de name gathering",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Matheus"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "bng\\Controllers\\":["app/controllers"],
+            "bng\\System\\":["app/system"],
+            "bng\\Models\\":["app/models"]
+        },
+        "files": [
+            "app/config.php",
+            "app/helpers/functions.php"
+        ]
+    }
+}
