@@ -118,3 +118,7 @@
 [2024-11-24T01:10:36.697178+00:00] app_logs.INFO: agente1@bng.com - Excluiu um cliente aaava - matheusamendeloapes@gmail.com [] []
 [2024-11-24T01:10:38.391230+00:00] app_logs.INFO: agente1@bng.com - Excluiu um cliente fsc svds - maaa@a.com [] []
 [2024-11-24T01:10:39.766549+00:00] app_logs.INFO: agente1@bng.com - Excluiu um cliente Matheus Mendes Lopes - matheusmendelopes@gmail.com [] []
+[2024-11-24T02:28:19.257999+00:00] app_logs.INFO: agente1@bng.com - Editou um cliente João Ribeiro existe - joao.ribeiro@gmail.com [] []
+[2024-11-24T02:28:24.200911+00:00] app_logs.INFO: agente1@bng.com - Editou um cliente João Ribeiro - joao.ribeiro@gmail.com [] []
+[2024-11-24T02:31:43.914965+00:00] app_logs.INFO: agente1@bng.com - Editou um cliente João Ribeiro - joao.ribeiro@gmail.com [] []
+[2024-11-24T02:31:50.061185+00:00] app_logs.INFO: agente1@bng.com - Editou um cliente João Ribeiro - joao.ribeiro@gmail.com [] []

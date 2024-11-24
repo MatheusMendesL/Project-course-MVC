@@ -84,3 +84,10 @@
         </div>
     </div>
 </div>
+
+<script>
+    flatpickr('#text_birthdate', {
+        altInput: true,
+        maxDate: new Date(),
+    })
+</script>
