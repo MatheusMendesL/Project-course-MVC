@@ -13,26 +13,34 @@
 
                         <p class="text-center">Indique o seu nome de utilizador.<br>Vamos enviar um email com um <strong>código</strong> para recuperar a password.</p>
 
-                        <form action="#" method="post">
+                        <form action="?ct=main&mt=reset_password_submit" method="post">
 
                             <div class="mb-4">
                                 <label for="text_username" class="form-label">Utilizador</label>
                                 <input type="email" name="text_username" id="text_username" value="" class="form-control" required>
                             </div>
                             <div class="mb-4 text-center">
-                                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-caret-left me-2"></i>Voltar</a>
+                                <a href="?ct=main&mt=index" class="btn btn-secondary"><i class="fa-solid fa-caret-left me-2"></i>Voltar</a>
                                 <button type="submit" class="btn btn-secondary">Enviar código<i class="fa-regular fa-paper-plane ms-2"></i></button>
                             </div>
-                            
+
                         </form>
 
-                        <div class="alert alert-danger p-2 text-center">
-                            [mensagem de erro]
-                        </div>
+                        <?php if (!empty($validation_error)) : ?>
+                            <div class="alert alert-danger p-2 text-center">
+                                    <div><?= $validation_error ?></div>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($server_error)) : ?>
+                            <div class="alert alert-danger p-2 text-center">
+                                    <div><?= $server_error ?></div>
+                            </div>
+                        <?php endif; ?>
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

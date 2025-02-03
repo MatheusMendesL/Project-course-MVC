@@ -3,6 +3,9 @@
 namespace bng\Controllers;
 
 abstract class BaseController{
+    // Depois faço
+    // Metódo para passar data sem ter que criar toda hora
+    
     public function view($view, $data = []){
 
         if(!is_array($data)){
@@ -26,8 +29,15 @@ abstract class BaseController{
     {
             $this->view('layouts/html_header.php', $data);
             $this->view('navbar.php', $data);
-            $this->view($name_view, $data);
+            $this->view($name_view . '.php', $data);
             $this->view('footer.php');
             $this->view('layouts/html_footer.php');
+    }
+
+    public function views_without_navbar($name_view, $data = [])
+    {
+            $this->view('layouts/html_header.php', $data);
+            $this->view($name_view . '.php', $data);
+            $this->view('footer.php');
     }
 }

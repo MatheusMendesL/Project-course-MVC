@@ -11,7 +11,7 @@
                         <h4><strong>Inserir novo cliente</strong></h4>
                         <hr>
 
-                        <form action="?ct=agent&mt=new_client_submit" method="post" novalidate>
+                        <form action="?ct=agent&mt=new_client_submit" method="post">
 
                             <div class="mb-3">
                                 <label for="text_name" class="form-label">Nome</label>

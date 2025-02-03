@@ -3,6 +3,7 @@
 namespace bng\System;
 use bng\Controllers\Main;
 use Exception;
+use Throwable;
 
 class Router
 {
@@ -43,8 +44,8 @@ class Router
             $class = "bng\Controllers\\$controller";
             $controller = new $class();
             $controller->$method(...$parameters);
-        } catch(Exception $err) {
-            die($err->getMessage());
+        } catch(Throwable) {
+            die('Acesso inválido!');
         }
 
     }

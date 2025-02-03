@@ -4,7 +4,7 @@
             <div class="card p-4 mb-5">
 
 
-                <form action="#" method="post">
+                <form action="?ct=main&mt=change_pass_submit" method="post">
                     <div class="row justify-content-center">
                         <div class="col-8">
 
@@ -31,15 +31,30 @@
                     </div>
 
                     <div class="mb-3 text-center">
-                        <a href="#" class="btn btn-secondary px-3"><i class="fa-solid fa-xmark me-2"></i>Cancelar</a>
+                        <a href="?ct=main&mt=index" class="btn btn-secondary px-3"><i class="fa-solid fa-xmark me-2"></i>Cancelar</a>
                         <button type="submit" class="btn btn-secondary px-3"><i class="fa-solid fa-check me-2"></i>Alterar</button>
                     </div>
 
                 </form>
+                <?php if (isset($validation_errors)): ?>
+                    <div class="alert alert-danger p-2 text-center">
+                        <ul>
+                            <?php foreach($validation_errors as $errors): ?>
+                                <li><?= $errors ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
 
-                <div class="alert alert-danger p-2 text-center">
-                    [mensagem de erro]
-                </div>
+                <?php if (isset($server_error)): ?>
+                    <div class="alert alert-danger p-2 text-center">
+                        <ul>
+                            <?php foreach($server_error as $errors): ?>
+                                <li><?= $errors ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endif; ?>
 
             </div>
         </div>

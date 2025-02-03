@@ -22,7 +22,7 @@
             </a>
 
             <!-- carregar ficheiro de clientes -->
-            <a href="#" class="unlink m-2">
+            <a href="?ct=agent&mt=upload_file_frm" class="unlink m-2">
                 <div class="home-option p-5 text-center">
                     <h3 class="mb-3"><i class="fa-solid fa-upload"></i></h3>
                     <h5>Carregar ficheiro</h5>
@@ -32,7 +32,7 @@
             <?php elseif($user->profile == 'admin') : ?>
 
             <!-- clientes -->
-            <a href="#" class="unlink m-2">
+            <a href="?ct=admin&mt=all_clients" class="unlink m-2">
                 <div class="home-option p-5 text-center">
                     <h3 class="mb-3"><i class="fa-solid fa-users"></i></h3>
                     <h5>Clientes</h5>
@@ -40,7 +40,7 @@
             </a>
 
             <!-- estatística -->
-            <a href="#" class="unlink m-2">
+            <a href="?ct=admin&mt=stats" class="unlink m-2">
                 <div class="home-option p-5 text-center">
                     <h3 class="mb-3"><i class="fa-solid fa-chart-column"></i></h3>
                     <h5>Estatística</h5>
@@ -48,7 +48,7 @@
             </a>
 
             <!-- gestão de utilizadores -->
-            <a href="#" class="unlink m-2">
+            <a href="?ct=admin&mt=agents_management" class="unlink m-2">
                 <div class="home-option p-5 text-center">
                     <h3 class="mb-3"><i class="fa-solid fa-user-gear"></i></h3>
                     <h5>Gestão de utilizadores</h5>

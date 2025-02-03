@@ -21,5 +21,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
      <?php endif; ?>
+      <!-- jquery !-->
+     <script src="assets/jquery/jquery-3.6.0.js"></script>
+     <!-- datatables !-->
+      <link href="assets/datatables/datatables.min.css" rel="stylesheet">
+      <script src="assets/datatables/datatables.min.js"></script>
+
+      <?php if(isset($chartjs)): ?>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <?php endif; ?>
 </head>
 <body>

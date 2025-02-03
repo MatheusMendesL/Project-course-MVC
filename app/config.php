@@ -15,3 +15,9 @@ define('LOGS_PATH', __DIR__ . '/../logs/app.log');
 
 define('OPENSSL_KEY',       'H0SDRQzIGqclX2kbYBk9xspdn9U5f3Wa');
 define('OPENSSL_IV',        'BzKAbjuREsHgnw56');
+
+define('Mailer_Host' ,'smtp.gmail.com');
+define('Mailer_Username', 'consolezone76@gmail.com');
+define('Mailer_pass', 'vofv nllg ylpf ynwy');
+define('Mailer_port', 465);
+define('Mailer_charset', 'utf-8');
